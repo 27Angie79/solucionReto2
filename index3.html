@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reto 2</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/funciones_mensaje.js"></script>
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/estilo.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Disfraces</a></li>
+          <li><a href="index2.html">Clientes</a></li>
+          <li><a href="index3.html">Mensajes</a></li>
+        </ul>
+      </nav>
+    </header>
+     <!--==================== principal ====================-->
+    <section class="principal section" id="principal">
+      <div class="principal_container container grid">
+
+          <div class="principal_data">
+            <h1 class="principal_title">Hola, somos el grupo 0</h1>
+            <h3 class="principal_subtitle">Pertenecemos al grupo 25 <br>Esta es la solución al Reto 2</h3>
+            <p class="principal_description">
+              Universidad Sergio Arboleda
+            </p>
+            <div id="resultado"></div>
+    <div>
+      <fieldset style="width: 30%">
+        <legend>Consultar Mensajes</legend>
+        <tr>
+          <th>ID:</th>
+          <td><input type="number" id="id"> </td>
+      </tr> 
+      <button onclick="consultarId()">Consultar por ID</button>
+      <button onclick="borrarId()">Borrar por ID</button>
+      </fieldset>
+      <p>
+        <br>
+      </p>
+    </div>
+    <fieldset style="width: 30%">
+      <legend>Mensaje</legend>
+      <table>
+         
+         <tr>
+             <th>MENSAJE:</th>
+             <td><input type="text" id="mensaje"> </td>
+         </tr> 
+    
+      </table>
+      <button onclick="guardar()">Guardar</button>
+      <button onclick="editarInformacion()">Actualizar</button>
+      <button onclick="consultar()">Consultar Todos</button>
+  </fieldset>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
